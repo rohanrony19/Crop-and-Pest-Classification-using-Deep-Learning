@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Crop and Pest Identofication</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="static/fontawesome/css/all.min.css" type="text/css" /> 
+    <link rel="stylesheet" href="static/css/slick.css" type="text/css" />   
+    <link rel="stylesheet" href="static/css/tooplate-simply-amazed.css" type="text/css" />
+<!--
+
+Tooplate 2123 Simply Amazed
+
+https://www.tooplate.com/view/2123-simply-amazed
+
+-->
+</head>
+
+<body style="background-image:url('https://c4.wallpaperflare.com/wallpaper/621/121/79/wheat-field-crops-plants-wallpaper-preview.jpg')">
+    <div id="outer">
+        
+        <button class="navbar-button collapsed" type="button">
+            <span class="menu_icon">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </span>
+        </button>
+        
+        <main id="content-box" class="order-first">
+            <div class="banner-section section parallax-window" data-parallax="scroll" data-image-src="img/section-1-bg.jpg" id="section-1"><br><br>
+			
+			<a class="btn btn-primary" href="/home">Home</a>
+			<a class="btn btn-primary" href="/">Logout</a>
+			<div class="container">
+                    <div class="item">
+                        <div class="bg-blue-transparent logo-fa"><span><i class="fas fa-2x fa-atom"></i></span> Crop and Pest Detection</div>
+                        <div class="bg-blue-transparent simple"><form action="/predict" method="POST" enctype="multipart/form-data">
+                                    <div class="form-group">
+                                        <label>Crop Image</label><input name="crop" type="file" class="form-control" >
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Pest Image</label><input name="pest" type="file" class="form-control" >
+                                    </div>
+                                    <div class="form-group text-right">
+                                        <input type="submit" class="btn btn-primary" value="Send it">
+                                    </div>
+                                </form></div>
+                    </div>
+                </div>
+            </div>
+        
+
+
+        </main>
+    </div>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/jquery.singlePageNav.min.js"></script>
+    <script src="static/js/slick.js"></script>
+    <script src="static/js/parallax.min.js"></script>
+    <script src="static/js/templatemo-script.js"></script>
+</body>
+</html>

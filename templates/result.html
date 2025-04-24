@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Crop and Pest Identification</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="static/fontawesome/css/all.min.css" type="text/css" /> 
+    <link rel="stylesheet" href="static/css/slick.css" type="text/css" />   
+    <link rel="stylesheet" href="static/css/tooplate-simply-amazed.css" type="text/css" />
+<!--
+
+Tooplate 2123 Simply Amazed
+
+https://www.tooplate.com/view/2123-simply-amazed
+
+-->
+</head>
+
+<body style="background-image:url('https://c4.wallpaperflare.com/wallpaper/621/121/79/wheat-field-crops-plants-wallpaper-preview.jpg')">
+    <div id="outer">
+        
+        
+        <main id="content-box" class="order-first">
+                <div class="banner-section section parallax-window" data-parallax="scroll" data-image-src="img/section-1-bg.jpg" id="section-1"><br><br>
+					
+			<a class="btn btn-primary" href="/home">Home</a>
+			<a class="btn btn-primary" href="/">Logout</a><br><br><br>
+                <div class="container ">
+                    <div class="row ">
+                        <div class="item col-md-4 bg-blue-transparent logo-fa">
+                            <div class="tm-work-item-inner">
+                                <div class="icn"><i class="fas fa-2x fa-icons"></i></div>
+                                <h3>Crop Image</h3>
+								<img src="./static/uploads/{{cname}}" width="150" height="150">
+                                <p><b>Result :</b>{{crop}}</p>
+                            </div>                        
+                        </div>
+                        <div class="item col-md-4 one bg-blue-transparent logo-fa">
+                            <div class="tm-work-item-inner">
+                                <div class="icn"><i class="fas fa-2x fa-tools"></i></div>
+                                <h3>Pest Image</h3>
+								<img src="./static/uploads/{{pname}}" width="150" height="150">
+                                <p><b>Result :</b>{{pest}}</p> 
+								<h3>Suggestion</h3>
+                                <p><b>Description :</b>{{link}}</p>
+                                <p><b>Link :</b><a href="{{desc}}" target="_blank">Click Link</a></p>
+                            
+								
+								</div>
+                        </div>
+						                        <div class="item col-md-4 two bg-blue-transparent logo-fa">
+                            <div class="tm-work-item-inner">
+                                <div class="icn"><i class="fab fa-2x fa-phoenix-framework"></i></div>
+                                <h3>Pesticides</h3>
+								{% if pest == 'ants'%}
+<b style="color:white">                                Chemical Pesticides</b>
+<ul style="color:white">
+<li>Fipronil</li>
+
+
+<li>Hydramethylnon</li>
+
+
+<li>Indoxacarb</li>
+
+
+<li>Boric Acid (Borax)</li>
+
+
+<li>Imidacloprid</li>
+
+
+<li>Chlorpyrifos</li>
+
+
+<li>Permethrin</li>
+
+
+<li>Deltamethrin</li>
+
+</ul>
+<b style="color:white">Natural or Organic Options</b>
+
+<ul style="color:white"><li>Diatomaceous Earth</li>
+
+
+<li>Essential Oils (e.g., Peppermint, Citrus)</li>
+
+<li>Neem Oil</li>
+
+<li>Pyrethrin</li>
+</ul>
+
+								{%endif%}
+								{% if pest == 'Ants'  or pest == 'Wasp' or pest =='Weevil' or pest == 'Earwig' %}
+<b style="color:white">                                Chemical Pesticides</b>
+<ul style="color:white">
+<li>Fipronil</li>
+
+
+<li>Hydramethylnon</li>
+
+
+<li>Indoxacarb</li>
+
+
+<li>Boric Acid (Borax)</li>
+
+
+<li>Imidacloprid</li>
+
+
+<li>Chlorpyrifos</li>
+
+
+<li>Permethrin</li>
+
+
+<li>Deltamethrin</li>
+
+</ul>
+<b style="color:white">Natural or Organic Options</b>
+
+<ul style="color:white"><li>Diatomaceous Earth</li>
+
+
+<li>Essential Oils (e.g., Peppermint, Citrus)</li>
+
+<li>Neem Oil</li>
+
+<li>Pyrethrin</li>
+</ul>
+
+								{%endif%}<br>
+															{% if pest == 'Bees' or pest == 'Earthworms' or pest == 'Catterpillar' or pest == 'Beetle' %}
+<b style="color:white">                                Chemical Pesticides</b>
+<ul style="color:white">
+<li>Carbaryl (Sevin)
+
+</li>
+
+
+<li>Chlorpyrifos</li>
+
+
+<li>Deltamethrin</li>
+
+
+<li>Cyfluthrin</li>
+
+
+<li>Lambda-Cyhalothrin</li>
+
+
+<li>Imidacloprid</li>
+
+
+<li>Permethrin</li>
+
+
+<li>Bifenthrin</li>
+
+</ul>
+<b style="color:white">Natural or Organic Options</b>
+
+<ul style="color:white">
+
+<li>Diatomaceous Earth</li>
+
+<li>Essential Oils (e.g., Citrus, Peppermint)</li>
+</ul>
+
+								{%endif%} <br>
+												{% if pest == 'Snail' or pest == 'Slug' or pest == 'Moth' or pest == 'Grasshopper' %}
+<b style="color:white">                                Chemical Pesticides</b>
+<ul style="color:white">
+
+
+<li>Metaldehyde</li>
+
+
+<li>Iron Phosphate
+
+</li>
+
+
+<li>Methiocarb</li>
+
+
+<li>Copper Sulfate
+
+</li>
+
+
+<li>Aluminum Sulfate
+
+</li>
+
+
+<li>Sodium Ferric EDTA</li>
+
+</ul>
+<b style="color:white">Natural or Organic Options</b>
+
+<ul style="color:white">
+
+<li>Diatomaceous Earth</li>
+<li>Neem Oil</li>
+<li>Coffee Grounds</li>
+<li>Salt</li>
+
+<li>Beer Traps</li>
+</ul>
+
+								{%endif%} <br>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/jquery.singlePageNav.min.js"></script>
+    <script src="static/js/slick.js"></script>
+    <script src="static/js/parallax.min.js"></script>
+    <script src="static/js/templatemo-script.js"></script>
+</body>
+</html>
